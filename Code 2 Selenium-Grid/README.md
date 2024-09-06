@@ -6,7 +6,7 @@
 #### Start the Hub: 
 
 ```
-sudo java -jar selenium-server-4.15.0.jar hub
+java -jar selenium-server-4.15.0.jar hub
 
 ```
 
@@ -25,6 +25,6 @@ java -jar selenium-server-4.15.0.jar node --hub http://localhost:4444 --port 555
 
 #### Run Your Project:
 ```
-sudo docker build -t selenium-grid-maven-project .
-sudo docker run -it selenium-grid-maven-project
+mvn clean
+mvn test
 ```
